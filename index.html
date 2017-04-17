@@ -2,33 +2,65 @@
 
   <meta charset="UTF-8">
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+
   <head>
   </head>
 
   <body>
 
-    <form>
-      <div class="form-group">
-        <label for="exampleInputEmail1">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-      </div>
-      <div class="form-group">
-        <label for="exampleInputPassword1">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-      </div>
-      <div class="form-group">
-        <label for="exampleInputFile">File input</label>
-        <input type="file" id="exampleInputFile">
-        <p class="help-block">Example block-level help text here.</p>
-      </div>
-      <div class="checkbox">
-        <label>
-          <input type="checkbox"> Check me out
-        </label>
-      </div>
-      <button type="submit" class="btn btn-default">Submit</button>
-    </form>
-    
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="col-xs-12 col-md-6">
+          <h3>Formulario de registro</h3>
+        <form>
+          <div class="form-group">
+            <label for="inputnombre">Nombre</label>
+            <input type="text" class="form-control" id="inputnombre" placeholder="Nombre">
+          </div>
+          <div class="form-group">
+            <label for="inputapellido">Apellido</label>
+            <input type="text" class="form-control" id="inputapellido" placeholder="Nombre">
+          </div>
+          <div class="form-group">
+            <label for="inputcorreo">Correo</label>
+            <input type="email" class="form-control" id="inputcorreo" placeholder="ejemplo@correo.com">
+          </div>
+          <div class="radio">
+            <h4>Género</h4>
+            <label>
+              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+              Femenino
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+              Masculino
+            </label>
+          </div>  
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> Deseo recibir más información sobre novedades y ofertas.
+            </label>
+          </div>
+          <button type="submit" class="btn btn-default">Enviar</button>
+          <button type="reset" class="btn btn-default">Limpiar</button>
+        </div>
+        </form>
+
+        <div class="col-xs-12 col-md-6">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3331.776257117724!2d-70.63058388529095!3d-33.376906880795055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c618a76fe405%3A0x4e54423d652cbfa5!2sCamino+Al+Bosque+de+Santiago%2C+Huechuraba%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses-419!2scl!4v1492471330406" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>        </div>
+        </div>
+    </div>
+
   </body>
 
 </html>
