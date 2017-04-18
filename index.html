@@ -1,5 +1,6 @@
 <html>
 
+  <title>Formulario de registro</title>
   <meta charset="UTF-8">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -10,24 +11,21 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
 
-  <head>
-  </head>
-
   <body>
 
     <div class="container-fluid">
+      <h3>Formulario de registro</h3>
       <div class="row">
 
         <div class="col-xs-12 col-md-6">
-          <h3>Formulario de registro</h3>
-        <form>
+        <form action="" method="get">
           <div class="form-group">
             <label for="inputnombre">Nombre</label>
-            <input type="text" class="form-control" id="inputnombre" placeholder="Nombre">
+            <input type="text" class="form-control" id="inputnombre" placeholder="Nombre" maxlength="50">
           </div>
           <div class="form-group">
             <label for="inputapellido">Apellido</label>
-            <input type="text" class="form-control" id="inputapellido" placeholder="Nombre">
+            <input type="text" class="form-control" id="inputapellido" placeholder="Nombre" maxlength="50">
           </div>
           <div class="form-group">
             <label for="inputcorreo">Correo</label>
@@ -48,7 +46,7 @@
           </div>  
           <div class="checkbox">
             <label>
-              <input type="checkbox"> Deseo recibir más información sobre novedades y ofertas.
+              <input type="checkbox" checked="checked"> Deseo recibir más información sobre novedades y ofertas.
             </label>
           </div>
           <button type="submit" class="btn btn-default">Enviar</button>
